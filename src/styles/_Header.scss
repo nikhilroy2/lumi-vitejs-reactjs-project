@@ -1,0 +1,17 @@
+@media (min-width: 1200px) {
+    .nav_arrow {
+        &::after {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            vertical-align: middle;
+            border-bottom: 10px solid #fd55d8;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 25px;
+        }
+    }
+}

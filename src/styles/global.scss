@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'AvenirNextLTPro';
+    src: url('../assets/fonts/AvenirNextLTPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro';
+    src: url('../assets/fonts//AvenirNextLTPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AvenirNextLTPro';
+    src: url('../assets/fonts//AvenirNextLTPro-It.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'AvenirNextLTPro', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    background: #F8F9FB;
+}
+
+// ......................Global Class......................
+.container_wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1200px) {
+    .container_padding {
+        padding: 0px 30px;
+    }
+}
+
+.input_border {
+    border-bottom: 3px solid #5d7287;
+}
+
+.button-border-purple {
+    border-color: #6245b5;
+}
+
+.text-copy {
+    --tw-text-opacity: 1;
+    color: rgb(93 114 135/var(--tw-text-opacity));
+}
+
+.surprises-subtitle-p {
+    color: #5d7287;
+    font-size: 1.25em;
+    line-height: 1.75;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.button-border,
+a.button-border {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    line-height: 30px;
+    font-size: 16px;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 0.25s;
+    color: #6245b5;
+    border-color: #6245b5;
+
+    &:hover {
+        background-color: #6245b5;
+        color: white !important;
+        box-shadow: 0px 5px 10px 0px rgba(127, 129, 134, 0.3);
+        border: solid #6245b5 2px;
+    }
+}
+
+
+input[type=number].hide_arrow::-webkit-inner-spin-button,
+input[type=number].hide_arrow::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.pause-button {
+    background-color: #ffbd26;
+    border-radius: 35px;
+    position: absolute;
+    text-align: center;
+    top: -15px;
+    display: inline;
+    font-weight: bold;
+    color: white;
+    line-height: 18px;
+}
+
+.step_helper::after {
+    content: '';
+    position: absolute;
+    width: 440px;
+    height: 150px;
+    border: 2px solid #ffd4f6;
+    border-color: #ffd4f6 transparent transparent;
+    border-radius: 70%/140px 120px 0 0;
+    transform: rotate(30deg);
+    top: 70px;
+    left: 130px;
+}
+
+// ......................Global Class......................End

@@ -1,0 +1,37 @@
+.form_field_group {
+    position: relative;
+
+    .form_field_label {
+        position: absolute;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 1rem;
+        color: #5b718a;
+        pointer-events: none;
+        transform-origin: top left;
+        will-change: transform;
+        transition: .3s;
+
+        &.label_active {
+            bottom: 60%;
+            transform: translate(.2rem, .8rem) scale(.75);
+        }
+    }
+    .form_field_helper{
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #5D7287;
+    }
+
+    .form_field_input {
+        border: 2px;
+        border-bottom-style: solid;
+        border-color: transparent transparent #5D7287 transparent;
+        &:focus {
+            border-style: solid;
+            border-color: #5D7287;
+        }
+    }
+}
